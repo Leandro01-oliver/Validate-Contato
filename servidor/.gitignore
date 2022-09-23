@@ -1,0 +1,6 @@
+
+## Não subir a pasta node_modules
+servidor/node_modules
+
+## Não subir as configurações do json
+servidor/*.json

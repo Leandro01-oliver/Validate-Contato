@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/cliente/src/js/mask/jquery.mask.min.js"></script>	
+    <script src="/cliente/src/js/maskForm"></script>
+    <link rel="stylesheet" href="/cliente/src/css/style.css">
+    <title>Validação</title>
+</head>
+<body>
+    
+    <section class="main">
+         <button class="btn">
+            R
+         </button>
+         <div class="modal">
+            <div class="btn-close">
+                x
+            </div>
+            <form>
+                <div class="box-nome">
+                    <div>
+                        <label>
+                            Nome
+                        </label>
+                    </div>
+                    <div>
+                        <input name="nome" id="nome"/>
+                    </div>
+                </div>
+                <div class="box-contato">
+                    <div>
+                        <label class="label-descricao">
+                            Tipo de Contato
+                        </label>
+                    </div>
+                    <div>
+                       <select name="contato" id="contato">
+                        <option value="Selecione um tipo de contato" disabled selected>
+                            Selecione um tipo de contato
+                       </option>
+                         <option value="Telefone">
+                              Telefone
+                         </option>
+                         <option value="Responsavel">
+                            Responsavel
+                       </option>
+                       <option value="Endereço">
+                             Endereço
+                        </option>
+                        <option value="Link">
+                            Link
+                       </option>
+                       <option value="Link Externo">
+                           Link Externo
+                        </option>
+                        <option value="Email">
+                            Email
+                         </option>
+                         <option value="Horário">
+                            Horário
+                         </option>
+                       </select>
+                    </div>
+                </div>
+                <div class="box-descricao">
+                    <div>
+                        <label class="label-descricao">
+                            Descrição
+                        </label>
+                    </div>
+                    <div>
+                        <input name="descricao" id="descricao"/>
+                    </div>
+                </div>
+                <div class="err-custom">
+                </div>
+                <div class="box-btn">
+                    <button class="btn-sub" type="submit">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+         </div>
+    </section>
+    <script src="/cliente/src/js/validacaoCampos.js"></script>
+</body>
+</html>
